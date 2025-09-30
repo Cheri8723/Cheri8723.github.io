@@ -1,192 +1,230 @@
 <!DOCTYPE html>
-<head>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Chango&display=swap" rel="stylesheet">
-   <style>
+<html lang="en"><head>
+ <meta charset="UTF-8" />
+ <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+ <meta name="description" content="Personal Portfolio of Kevin"/>
+ <title>Kevin - Portfolio</title>
+ <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
 
-body{
-  font-family: "Chango", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-}
 
-    </style>
+ <style>
+   /* Reset & Font */
+   * {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+   }
+   body {
+     font-family: 'Inter', sans-serif;
+     line-height: 1.6;
+     background-color: #f4f4f4;
+     color: #333;
+   }
+
+
+   /* General Centering */
+   .center-section {
+     text-align: center;
+     max-width: 1200px;
+     margin: 0 auto;
+     padding: 60px 20px;
+   }
+   .center-horizontal {
+     max-width: 1200px;
+     margin: 0 auto;
+     padding: 0 20px;
+   }
+
+
+   /* Navbar */
+   .navbar {
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     background-color: #222;
+     padding: 20px 0;
+     color: #fff;
+   }
+   .logo {
+     font-size: 1.5rem;
+     font-weight: bold;
+   }
+   .nav-links {
+     list-style: none;
+     display: flex;
+     gap: 20px;
+   }
+   .nav-links a {
+     color: #fff;
+     text-decoration: none;
+     font-weight: 600;
+   }
+   .nav-links a:hover {
+     color: #ffcc00;
+   }
+
+
+   /* Buttons */
+   .btn {
+     display: inline-block;
+     margin-top: 20px;
+     padding: 10px 25px;
+     background-color: #222;
+     color: #fff;
+     text-decoration: none;
+     border-radius: 5px;
+     font-weight: bold;
+   }
+   .btn:hover {
+     background-color: #444;
+   }
+
+
+   /* Images */
+   .profile-pic {
+     width: 150px;
+     height: 150px;
+     border-radius: 50%;
+     object-fit: cover;
+     margin-bottom: 20px;
+   }
+   .project-image {
+     width: 100%;
+     height: auto;
+     border-radius: 10px;
+     margin-bottom: 15px;
+   }
+
+
+   /* Project Grid */
+   .project-grid {
+     display: grid;
+     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+     gap: 30px;
+     margin-top: 40px;
+   }
+   .project {
+     background-color: #fff;
+     padding: 20px;
+     border-radius: 12px;
+     box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+     text-align: center;
+   }
+   .project h3 {
+     margin: 15px 0 10px;
+   }
+   .project p {
+     font-size: 0.95rem;
+     color: #555;
+   }
+   .project a {
+     display: inline-block;
+     margin-top: 10px;
+     color: #007BFF;
+     text-decoration: none;
+     font-weight: bold;
+   }
+   .project a:hover {
+     text-decoration: underline;
+   }
+
+
+   /* Footer */
+   footer {
+     margin-top: 40px;
+     font-size: 0.9rem;
+     color: #777;
+   }
+ </style>
 </head>
+
 <body>
-    This is testing my website
-    <div id= "leftside"   style= "float: left">
-        <img src="picture1.webp" alt=""height="400px">
-    </div>
-    <div>
-        <strong>Ingredients</strong>
+   <header>
+       <nav class="navbar center-horizontal">
+         <div class="logo">Kevin</div>
+         <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#project">Project</a></li>
+            <li><a href="#contact">Contect</a></li>
+
+         </ul>
+       </nav>
+      </header>
+      
+     
+
+
+  <section id="hero" class="center-section">
+    <img src="statue of liberty.jpg" alt="Your Profile Picture" class="profile-pic"/>
+    <h1>Hi, I'm Kevin</h1>
+    <p>A passionate [Web Developer / Designer / Your Title] based in [City/Country]</p>
+    <a href="projects" class="btn">See My Work</a>
+  </section>
+
+ <section id="about" class="center-section">
+    <h2>About Me</h2>
+    <p>
+        I usually play golf almost everyday, but I watched on PGA Tour and watched the movies
         <br>
-        <strong>Speciality Lattes</strong>
-
-        <p>
-            Fresh, organic Ingredients
-            <br>
-            Made from Scratch
-        </p>
-            We use real organic Madagascar Vanilla
-            <br>
-            beans and whip our homemade cream Fresh
-            <br>
-            throuhout the day
-            <br>
-            <br>
-            <strong>Matcha</strong>
-            <br>
-            Ceremonial-grade matcha from Yame, Japan
-            <br>
-            <br>
-            <strong>Teas</strong>
-            <br>
-            Curating finest teas from France and Korea
-            <br>
-            <br>
-            Every Ingredient reflects
-            <br>
-            our commitment to excellence
-    </div>
-
-
-
-<br style="clear:both"/>
-
-<div id= "leftside_2"  style= "float: left">
-    <p>
-        <strong>Expanded parking</strong>
+        I work at Seesaw Beans & Coffee in Pomona
         <br>
-        <br>
-         We now offer two parking lots:
-         <br>
-         Lot 1
-         <br>
-         Seesaw Lot- right beside cafe
-         <br>
-         Lot 2
-         <br>
-         Nolza Lot- Across the alley at Nolza
-         <br>
-         (8am-4pm)
+        My favorite golfer are Tiger Woods, Rory Mc Ilroy, K.J. Choi 
     </p>
-    </div>
-</div>
+ </section>
 
-<div id="rightside"  style="float: left;">
-  <img src="Seesaw_Parking_ 3 image .webp"  alt=""height="400px">
-</div>
+ <section id="projects" class="center-section">
+      <h2>Food places</h2>
+      <div class="project-grid">
+
+        <div class="project">
+            <img src="Kentucky Fried Chicken.jpg" alt="Project 1" class="project-image"/>
+            <h3>KentuckyFriedChicken</h3>
+            <p>This is a American Fast food restaurant with great food</p>
+            <a href="#"> View Project</a>
+        </div>
 
 
+        <div class="project">
+            <img src="PGA Tour.svg" alt="Project 1" class="project-image"/>
+            <h3>Golf</h3>
+            <p>This is a Golf Tournament</p>
+            <a href="#">View Project</a>
+        </div>
+        
+        <div class="project">
+             <img src="In n out Burger 2.jpg" alt="Project 1" class="project-image"/>
+             <h3>In n out Burger</h3>
+             <p>This is a American fast food restaurant Since 1948 in California</p>
+             <a href="#"> View Project</a>
+            </div>    
 
-
-
-<br style="clear:both"/>
-
-<div id="rightside_2"    style="float: left">
-   <p>
-       <strong>Patio Now Open</strong>
-       <br>
-       <br>
-       More sunshine, more seats, more Seesaw! We've
-       <br>
-       expanded our outdoor space. Come enjoy the breeze
-       <br>
-       the beans, and the company, just across the cafe
-    </p>
-    </div>
-</div>
-
-<div id="leftside"  style="float: left">
-    <img src="Seesaw patio now open.webp"   alt=""height="600px">
-</div> 
-
+            
 
 
 
+        </div> 
+      </div>
+     </section>
 
-<br style="clear:both"/>
+     <section id="contact" class="center-section">
+       <h2>Contact</h2>
+       <p>Reach out via email or follow me on social media.</p>
+       <ul>
+         <li>Email: <a href="mailto:kevinchoi1991@gmail.com">kevinchoi1991@gmail.com</a></li>
+         <li>GitHub= <a href="https:github.com/Cheri8723" >github.com/Cheri8723</a></li>
+         <li>Video: </li> <a href="https://www.youtube.com/watch?v=LD1_CPqJusg&list=RDLD1_CPqJusg&start_radio=1">Jesus Loves Me</a></li>
 
-<div id="leftside_2"     style="float: left">
-    <p>
-    <strong>Cafe with Purpose</strong>
-    <br>
-    <br>
-    A one-of-a-kind cafe
-    <br>
-    where every cup
-    <br>
-    brews joy and purpose 
-    <br>
-    <br>
-    Our staff includes adults with developmental
-    <br>
-    disabilities
-    </p>
-    </div>
-</div>
+      </ul>   
+    </section> 
+     
+     </body>
 
-<div id="rightside_3"   style="float: left"></div>
-     <img src="Cafe with purpose.webp"  alt=""height=400px">
-</div>    
+     </html>
+        
+            
+
+   
+  
 
 
 
-
-
-<br style="clear:both"/>
-
-<div id="rightside_4"      style="float: left">
-    <p>
-    <strong>In-House Reading</strong>    
-    <br>
-    <br>
-    Everyday by True Master Artisans
-    <br>
-    <br>
-    30 + years of studying and sourcing the best speciality 
-    <br>
-    beans
-    <br>
-    <br>
-    Precision, Passion, Purpose
-    </p>
-    </div>
-</div>
-
-<div id="leftside_3"     style="float: left"></div>
-       <img src="In-House Reading.webp"  alt=""height=500px">
-</div>
-
-
-
-
-
-
-<br style="clear:both"/>
-
-<div id="leftside_4"        style="float: left">
-    <p>
-    At the playground
-    <br>
-    I couldn't Seesaw alone
-    <br> 
-    <br>
-    What a joy it is  
-    <br>
-    to simply be here with you
-    <br>
-    <br>
-    Through all the ups & downs of life,
-    <br>
-    Let's Seesaw together
-    <p>
-    </div>
-</div>
-
-<div id="rightside_5"    style="float:  left"></div>
-        <img src="Playground.webp"   alt=""height=500px">
-</div>
-
-</body>
